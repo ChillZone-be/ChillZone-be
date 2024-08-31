@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ChillZone.be</title>
+<meta charset="UTF-8">
+<meta name="description" content="Hallo! ChillZone ist mein Developer portfolio, entwickelt von ᴊxsᴛᴛ.ᴍɪᴋᴀ#0001">
+<meta name="keywords" content="ChillZone, ChillZone.be, eine tiefe, verträumte Atmosphäre, ᴊxsᴛᴛ.ᴍɪᴋᴀ#0001">
+<meta name="author" content="Mika">
+<link rel="icon" type="image/png" href="assets/img/favicon-img.png" sizes="32x32">
+<link rel="stylesheet" href="assets/css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<style>
+  /* Container-Element */
+  .container {
+    display: flex; /* Verwenden Sie Flexbox-Layout */
+    justify-content: center; /* Zentrieren Sie das Bild horizontal */
+  }
+
+  /* Bild-Element */
+  .container img {
+    margin: auto; /* Zentrieren Sie das Bild vertikal */
+  }
+
+    /* Your existing styles */
+    .container {
+            display: flex;
+            justify-content: center;
+        }
+
+            .container img {
+                margin: auto;
+            }
+
+        /* Nav Bar styles */
+        nav {
+            background-color: #000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+          /* RGB Beleuchtungseffekt */
+        @keyframes rgbEffect {
+            0%   {color: red;}
+            33%  {color: green;}
+            66%  {color: blue;}
+            100% {color: red;}
+        }
+
+        h1 {
+            animation: rgbEffect 10s linear infinite;
+        }
+
+        nav a {
+            animation: rgbEffect 5s linear infinite;
+            padding: 8px 5px;
+                margin: 0 10px;
+        }
+</style>
+
+<!-- Nav Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">shop</a>
+    <a href="https://jxsttmika.itch.io">Games</a>  
+    <a href="contact.html">Contact</a>
+    <a href="Projekte.html">Projekte</a>
+</nav>
+
+<div class="container">
+  <img src="https://discord.c99.nl/widget/theme-4/431176686659174410.png" />
+</div>
+<h1 style="color:rgb(83, 83, 207);">ChillZone.be</CodeCras></h1>
+<h2 style="color:rgb(83, 83, 207);" onClick="playAudio()" id="hiddenMusic">eine tiefe, verträumte Atmosphäre...
+<audio id="music" autoplay></audio>
+</h2>
+<div class="box flex">
+<img src="assets/img/github.png" class="links" width="56" height="56" onClick="openGitHub()">
+<img src="assets/img/realmeye.png" class="links" width="56" height="56" onClick="openRealmEye()">
+<img src="assets/img/coffee.png" class="links" width="56" height="56" onClick="openCoffeeTip()">
+</div>
+<p class="footer-text"> hergestellt mit <img class="emoji" id="herz" alt="heart" height="20" width="20" onclick="secretCounter()"></g-emoji> von <a class="footer-name" target="_blank" rel="noopener noreferrer" href="javascript:if(confirm('https://discordapp.com/users/431176686659174410/\n\nThis file was not retrieved because it was filtered out by your project settings.\n\nWould you like to open it from the server?'))window.location='https://discordapp.com/users/431176686659174410/'">ᴊxsᴛᴛ.ᴍɪᴋᴀ#0001</a></p>
+<div id="secret"></div>
+<script defer src="../static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993/index.htm" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"79c9b4b2de5135ea","version":"2023.2.0","r":1,"token":"135cfe068ab04170ba6c4057f6d8ebb4","si":100}' crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/115d8028-db9c-4115-a15a-9eb254f69f18/webchat/config.js" defer></script>
+
+</body>
+<script>
+// secret music
+    const player = document.getElementById("music");
+    i = 0;
+    player.pause();
+    var playingMusic = false;
+
+    const audioSources = [
+    "./assets/sound/bubblegum-lofi.mp3", 
+    "./assets/sound/lofi_lounge.mp3", 
+    "./assets/sound/break_free.mp3", 
+    "./assets/sound/soft_ambient.mp3", 
+    "./assets/sound/funky_lofi.mp3",
+    "./assets/sound/lofi_fashion_3.mp3", 
+    "./assets/sound/the_higher_self.mp3", 
+    "./assets/sound/lofi_fashion_2.mp3", 
+    "./assets/sound/sway.mp3", 
+    "./assets/sound/nostalgic.mp3",
+    "./assets/sound/november_rain.mp3", 
+    "./assets/sound/song_of_the_free.mp3", 
+    "./assets/sound/waves.mp3", 
+    "./assets/sound/calm.mp3", 
+    "./assets/sound/put_some_work_in.mp3",
+    "./assets/sound/life_is_fine.mp3", 
+    "./assets/sound/smile_on_me.mp3", 
+    "./assets/sound/august_rain.mp3", 
+    "./assets/sound/lofi_hiphop_3.mp3", 
+    "./assets/sound/lift_me_up.mp3",
+    "./assets/sound/lofi_sax.mp3", 
+    "./assets/sound/lofi_hiphop_2.mp3", 
+    "./assets/sound/mediterranean_sea.mp3", 
+    "./assets/sound/loneliness.mp3", 
+    "./assets/sound/lofi_fashion.mp3",
+    "./assets/sound/september_rain.mp3", 
+    "./assets/sound/drifting_away.mp3", 
+    "./assets/sound/hiking_travel.mp3",
+    "./assets/sound/laxin.mp3", 
+    "./assets/sound/chillhop.mp3", 
+    "./assets/sound/brand_new_days.mp3",
+    "./assets/sound/tropical.mp3", 
+    "./assets/sound/oneday.mp3", 
+    "./assets/sound/dilemma.mp3",
+    "./assets/sound/sleep_calm.mp3", 
+    "./assets/sound/sparkle.mp3", 
+    "./assets/sound/vlog_hip_hop.mp3", 
+    "./assets/sound/lofi_hiphop2.mp3", 
+    "./assets/sound/gentle_lofi.mp3",
+    "./assets/sound/midnight.mp3", 
+    "./assets/sound/what_funk.mp3", 
+    "./assets/sound/i_need_you.mp3", 
+    "./assets/sound/land_of_fire.mp3", 
+    "./assets/sound/grateful.mp3",
+    "./assets/sound/sunkv.mp3", 
+    "./assets/sound/rainbow.mp3", 
+    "./assets/sound/vlog_music.mp3", 
+    "./assets/sound/rondo.mp3", 
+    "./assets/sound/tokyo_chillbeats.mp3",
+    "./assets/sound/sky_drops.mp3", 
+    "./assets/sound/lofi_hiphop.mp3", 
+    "./assets/sound/saturday_nights.mp3", 
+    "./assets/sound/the_lofi_elk.mp3", 
+    "./assets/sound/soft_lofi.mp3",
+    "./assets/sound/instant.mp3", 
+    "./assets/sound/lofi_relax.mp3", 
+    "./assets/sound/a_just_king.mp3", 
+    "./assets/sound/deepsea.mp3"
+    ];
+
+    function shuffleSongs(array) {
+    let audioSources = array.length, randomAudio;
+
+    while (randomAudio != 0) {
+        randomAudio = Math.floor(Math.random() * audioSources);
+        audioSources--;
+        [array[audioSources], array[randomAudio]] = [
+        array[randomAudio], array[audioSources]];
+    }
+
+    return array;
+    }
+    shuffleSongs(audioSources);
+
+    function playAudio() {
+        if (playingMusic) {
+            player.pause();
+            console.log("Music Player: Paused");
+        } else {
+            i = ++i < audioSources.length ? i : 0;
+            player.src = audioSources[i];
+            console.log("Music Player: Playing --> " + audioSources[i].slice(15));
+        }
+        playingMusic = !playingMusic;
+    };
+
+    player.addEventListener('ended', (event) => {
+        console.log('Music Player: Song ended');
+        playingMusic = false;
+        playAudio();
+    });
+
+// open links onclick
+    function openGitHub() {
+        window.open("https://github.com/EinsPommes", "_blank");
+    }
+    function openRealmEye() {
+        window.open("https://realmeye.com/player/...", "_blank");
+    }
+    function openCoffeeTip() {
+        window.open("https://ko-fi.com/jxsttmika", "_blank");
+    }
+// rin credits secret
+    var secretNumber = 0
+
+    function secretCounter() {
+        secretNumber = secretNumber + 1
+        if (secretNumber === 5) {
+            document.getElementById("secret").innerHTML += 
+            "<p class=secret-text>icons and cursor made by <a class=footer-name target=_blank rel=noopener noreferrer href=https://discordapp.com/users/431176686659174410/>RIN#7777</a><p>";
+        }
+    }
+
+// random heart picker
+    var imageArray = new Array("./assets/img/heart-red.png", "./assets/img/heart-pink.png", "./assets/img/heart-blue.png");
+    var numberRandom = Math.floor(Math.random() * imageArray.length);
+    document.getElementById("heart").src = imageArray[numberRandom];   
+</script>
+</html>

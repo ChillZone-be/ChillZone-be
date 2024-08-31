@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>ChillZone.be - Kontakt</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kontaktseite von ChillZone.be">
+    <meta name="keywords" content="Kontakt, ChillZone.be, Developer Portfolio">
+    <meta name="author" content="Mika">
+    <link rel="icon" type="image/png" href="assets/img/favicon-img.png" sizes="32x32">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Stile von der Hauptseite von ChillZone.be */
+        <style>
+  /* Container-Element */
+  .container {
+    display: flex; /* Verwenden Sie Flexbox-Layout */
+    justify-content: center; /* Zentrieren Sie das Bild horizontal */
+  }
+
+  /* Bild-Element */
+  .container img {
+    margin: auto; /* Zentrieren Sie das Bild vertikal */
+  }
+
+    /* Your existing styles */
+    .container {
+            display: flex;
+            justify-content: center;
+        }
+
+            .container img {
+                margin: auto;
+            }
+
+        /* Nav Bar styles */
+        nav {
+            background-color: #000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+          /* RGB Beleuchtungseffekt */
+        @keyframes rgbEffect {
+            0%   {color: red;}
+            33%  {color: green;}
+            66%  {color: blue;}
+            100% {color: red;}
+        }
+
+        h1 {
+            animation: rgbEffect 10s linear infinite;
+        }
+
+        nav a {
+            animation: rgbEffect 5s linear infinite;
+            padding: 8px 5px;
+                margin: 0 10px;
+        }
+
+        /* Zusätzlicher Stil für das Kontaktformular */
+    .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Stellt sicher, dass das Formular in der Mitte der Seite ist */
+  background-color: #f0f0f0; /* Hintergrundfarbe Ihrer Wahl */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  width: 100%; /* Fügt eine Breite hinzu, damit das Formular nicht mehr als 350px breit ist */
+  margin: 0 auto; /* Zentriert das Formular horizontal */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Fügt Schatten für das Formular hinzu */
+}
+
+.message {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.input01 {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input01 + span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown + span {
+  top: 40px;
+  font-size: 0.9em;
+}
+
+.form label .input01:focus + span,.form label .input01:valid + span {
+  top: 50px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input01:valid + span {
+  color: green;
+}
+
+.fancy {
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 390;
+  letter-spacing: 2px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 8px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #cacaca;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #818181;
+  transform: translateX(30%);
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: #cacaca;
+}
+
+.fancy:hover::before {
+  width: 1.5rem;
+  background: white;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navigationsleiste von ChillZone.be -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">shop</a>
+        <a href="https://jxsttmika.itch.io">Games</a> 
+    </nav>
+    
+
+    <!-- Kontaktformular -->
+   <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
+    <form class="form">
+    
+    <div class="flex">
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>Vorname</span>
+        </label>
+
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>Nachname</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input required="" placeholder="" type="email" class="input">
+        <span>Email</span>
+    </label> 
+        
+    <label>
+        <input required="" type="tel" placeholder="" class="input">
+        <span>Nummer</span>
+    </label>
+    <label>
+        <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+        <span>ihr anliegen</span>
+    </label>
+    
+    <button class="fancy" href="#">
+      <span class="top-key"></span>
+      <span class="text">senden</span>
+      <span class="bottom-key-1"></span>
+      <span class="bottom-key-2"></span>
+    </button>
+</form>
+            </button>
+        </form>
+    </div>
+    
+
+    <!-- Weitere Skripte und Elemente von ChillZone.be -->
+    <!-- ... -->
+
+</body>
+</html>
